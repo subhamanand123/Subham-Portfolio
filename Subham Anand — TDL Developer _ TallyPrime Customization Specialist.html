@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Subham Anand — TDL Developer | TallyPrime Customization Specialist</title>
+<meta name="description" content="Subham Anand is a TDL Developer with 3+ years of experience building TallyPrime and Tally ERP 9 customizations: inventory controls, approval workflows, analytical reports and data imports.">
+<meta property="og:title" content="Subham Anand — TDL Developer">
+<meta property="og:description" content="TallyPrime & Tally ERP 9 customization, automation and integrations.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070b14;--panel:#0e1524;--line:#1e2a44;--tx:#e8eefc;--mu:#8b97b3;--cy:#22d3ee;--bl:#3b82f6;--ok:#34d399;--er:#f87171;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 16px/1.65 'Space Grotesk',system-ui,sans-serif;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;background:radial-gradient(600px 400px at 85% 0,#22d3ee1a,transparent),radial-gradient(500px 400px at 0 30%,#3b82f61a,transparent);pointer-events:none;z-index:-1}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--cy);outline-offset:3px}
+.mono{font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace}
+.w{max-width:1120px;margin:0 auto;padding:0 22px}
+section{padding:92px 0}
+h1,h2,h3{line-height:1.12;margin:0;letter-spacing:-.02em}
+h2{font-size:clamp(28px,4vw,42px);margin-bottom:12px}
+.sub{color:var(--mu);max-width:620px;margin:0 0 40px}
+.glass{background:#0e1524cc;border:1px solid var(--line);border-radius:16px;backdrop-filter:blur(10px)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:10px;font-weight:500;border:1px solid var(--line);background:transparent;color:var(--tx);cursor:pointer;font:inherit;transition:transform .2s,box-shadow .2s,border-color .2s}
+.btn:hover{transform:translateY(-2px);border-color:var(--cy)}
+.btn.p{background:linear-gradient(135deg,var(--cy),var(--bl));color:#04101c;font-weight:700;border:0}
+.btn.p:hover{box-shadow:0 8px 30px #22d3ee40}
+.chip{display:inline-block;padding:3px 10px;border:1px solid var(--line);border-radius:99px;font-size:12.5px;color:var(--mu);background:#0a1120}
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:env(safe-area-inset-top,0px);background:#070b14d9;backdrop-filter:blur(12px);border-bottom:1px solid #1e2a4488}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:700;letter-spacing:-.02em}.logo b{color:var(--cy)}
+.links{display:flex;gap:4px}
+.links a{padding:6px 12px;border-radius:8px;color:var(--mu);font-size:14.5px;transition:.2s}
+.links a:hover,.links a.on{color:var(--tx);background:#22d3ee14}
+.links a.on{box-shadow:inset 0 -2px var(--cy)}
+#mb{display:none;background:0;border:1px solid var(--line);color:var(--tx);border-radius:8px;padding:6px 12px;font:inherit}
+@media(max-width:820px){#mb{display:block}.links{display:none;position:absolute;top:calc(60px + env(safe-area-inset-top,0px));left:0;right:0;flex-direction:column;background:#070b14f5;padding:12px 22px;border-bottom:1px solid var(--line)}.links.open{display:flex}}
+/* hero */
+#home{padding-top:140px;min-height:100vh}
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
+@media(max-width:900px){.hero{grid-template-columns:1fr}}
+.lab{color:var(--cy);font-size:13px;margin-bottom:18px;display:flex;align-items:center;gap:10px}
+.lab::before{content:"";width:28px;height:1px;background:var(--cy)}
+h1{font-size:clamp(36px,5.6vw,64px);font-weight:700}
+h1 span{background:linear-gradient(90deg,var(--cy),var(--bl));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--mu);font-size:17.5px;max-width:540px;margin:22px 0 30px}
+.exp{margin-top:34px;display:flex;align-items:center;gap:14px}
+.exp b{font-size:40px;color:var(--cy);line-height:1}
+.exp span{color:var(--mu);font-size:14px;max-width:150px;line-height:1.3}
+.term{position:relative}
+.term .bar{display:flex;gap:7px;align-items:center;padding:12px 16px;border-bottom:1px solid var(--line);font-size:12.5px;color:var(--mu)}
+.term .bar i{width:10px;height:10px;border-radius:50%;background:#2a3858}
+.term pre{margin:0;padding:18px 20px;font-size:13.2px;line-height:1.75;min-height:330px;color:#c8d4f0;white-space:pre-wrap;overflow-x:auto}
+.k{color:#7aa2ff}.s{color:var(--ok)}.c{color:#5b6b90}.f{color:var(--cy)}
+.cur{display:inline-block;width:8px;height:15px;background:var(--cy);vertical-align:-2px;animation:bl 1s steps(2) infinite}
+@keyframes bl{50%{opacity:0}}
+.fl{position:absolute;padding:5px 12px;font-size:12.5px;border-radius:99px;background:#0b1424ee;border:1px solid #22d3ee55;color:var(--cy);animation:fy 6s ease-in-out infinite}
+@keyframes fy{50%{transform:translateY(-9px)}}
+@media(max-width:900px){.fl{display:none}}
+.badges{display:none;flex-wrap:wrap;gap:8px;margin-top:20px}
+@media(max-width:900px){.badges{display:flex}}
+/* about */
+.ab{display:grid;grid-template-columns:320px 1fr;gap:44px;align-items:start}
+@media(max-width:860px){.ab{grid-template-columns:1fr}}
+.card{padding:26px}
+.av{width:84px;height:84px;border-radius:20px;background:linear-gradient(135deg,var(--cy),var(--bl));display:grid;place-items:center;font-size:30px;font-weight:700;color:#04101c;margin-bottom:18px}
+.card dl{margin:18px 0 0;display:grid;gap:10px;font-size:14.5px}
+.card dt{color:var(--mu);font-size:12.5px}.card dd{margin:0}
+.ab p{color:#c0cae2;margin:0 0 18px}
+/* timeline */
+.tl{position:relative;padding-left:30px;border-left:1px solid var(--line);margin-left:6px}
+.tl>div{position:relative;margin-bottom:22px}
+.tl>div::before{content:"";position:absolute;left:-37px;top:8px;width:13px;height:13px;border-radius:50%;background:var(--bg);border:2px solid var(--cy);box-shadow:0 0 14px #22d3ee80}
+.tl h3{font-size:19px}.tl .m{color:var(--mu);font-size:14px}
+.res{columns:2;column-gap:36px;padding:0;margin:18px 0 0;list-style:none}
+@media(max-width:760px){.res{columns:1}}
+.res li{break-inside:avoid;margin-bottom:11px;padding-left:20px;position:relative;color:#c0cae2;font-size:15px}
+.res li::before{content:"›";position:absolute;left:0;color:var(--cy);font-weight:700}
+/* skills */
+.grid{display:grid;gap:18px}
+.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
+@media(max-width:900px){.g3{grid-template-columns:1fr 1fr}}@media(max-width:620px){.g3,.g2{grid-template-columns:1fr}}
+.sk{padding:22px;transition:.25s}
+.sk:hover{border-color:var(--cy);transform:translateY(-3px)}
+.sk h3{font-size:16px;margin-bottom:14px;color:var(--cy)}
+.sk .chip{margin:0 6px 8px 0;color:var(--tx);transition:.2s}
+.sk .chip:hover{border-color:var(--cy);background:#22d3ee14}
+.sk .chip.lt{color:var(--mu);border-style:dashed}
+.note{color:var(--mu);font-size:13.5px;margin-top:18px}
+/* projects */
+.pj{overflow:hidden;display:flex;flex-direction:column;transition:.25s}
+.pj:hover{border-color:#22d3ee77;box-shadow:0 18px 50px #00000066}
+.vis{padding:18px;background:linear-gradient(180deg,#0a1222,#0c1730);border-bottom:1px solid var(--line);min-height:210px;font-size:12px;position:relative}
+.vis .t{display:flex;justify-content:space-between;color:var(--mu);margin-bottom:12px;font-size:11.5px}
+.pb{padding:24px;display:flex;flex-direction:column;gap:12px;flex:1}
+.pb .cat{color:var(--cy);font-size:12.5px}
+.pb h3{font-size:21px}
+.pb h4{margin:6px 0 2px;font-size:12.5px;color:var(--mu);font-weight:500}
+.pb p{margin:0;color:#c0cae2;font-size:14.5px}
+.pb ul{margin:0;padding-left:18px;color:#c0cae2;font-size:14.5px}
+.imp{margin-top:auto;border-left:2px solid var(--cy);padding:6px 12px;background:#22d3ee0d;color:var(--tx);font-size:14.5px}
+.det{display:none;gap:10px;flex-direction:column}.pj.open .det{display:flex}
+.more{align-self:flex-start;background:0;border:0;color:var(--cy);font:inherit;cursor:pointer;padding:0}
+.demo{position:absolute;right:14px;top:12px;font-size:10.5px;color:#5b6b90}
+.bars{display:flex;align-items:flex-end;gap:10px;height:90px}
+.bars div{flex:1;border-radius:5px 5px 0 0;background:linear-gradient(var(--cy),var(--bl));transform-origin:bottom;transform:scaleY(0);transition:transform .9s cubic-bezier(.2,.8,.2,1)}
+.in .bars div{transform:scaleY(1)}
+.sw{display:flex;gap:6px;margin-top:10px;align-items:center;color:var(--mu)}.sw i{width:14px;height:14px;border-radius:50%}
+.row{display:flex;justify-content:space-between;align-items:center;padding:7px 10px;border:1px solid var(--line);border-radius:8px;margin-bottom:7px;background:#0b1424}
+.tag{padding:1px 8px;border-radius:99px;font-size:10.5px}
+.tag.g{background:#34d39922;color:var(--ok)}.tag.r{background:#f8717122;color:var(--er)}.tag.b{background:#3b82f633;color:#7aa2ff}.tag.y{background:#fbbf2422;color:#fbbf24}
+.flow{display:flex;align-items:center;gap:6px;margin-bottom:12px}
+.flow span{flex:1;text-align:center;padding:7px 2px;border:1px solid var(--line);border-radius:8px;background:#0b1424;font-size:11px}
+.flow span.d{border-color:var(--ok);color:var(--ok)}.flow span.n{border-color:var(--cy);color:var(--cy);animation:pl 2s infinite}
+@keyframes pl{50%{box-shadow:0 0 12px #22d3ee66}}
+.prog{height:7px;background:#16213a;border-radius:9px;overflow:hidden;margin:8px 0}
+.prog i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--cy),var(--ok));transition:width 1.6s ease}
+.in .prog i{width:var(--w)}
+/* services */
+.sv{padding:22px;transition:.25s}.sv:hover{border-color:var(--cy);transform:translateY(-3px)}
+.ic{width:42px;height:42px;border-radius:11px;display:grid;place-items:center;background:#22d3ee14;border:1px solid #22d3ee44;color:var(--cy);font-size:12px;margin-bottom:14px}
+.sv h3{font-size:17px;margin-bottom:6px}.sv p{margin:0;color:var(--mu);font-size:14.5px}
+/* process */
+.pr{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;position:relative}
+@media(max-width:900px){.pr{grid-template-columns:1fr}}
+.st{padding:20px;cursor:pointer;text-align:left;color:inherit;font:inherit;transition:.25s;position:relative}
+.st:hover,.st.on{border-color:var(--cy);background:#22d3ee10}
+.st .n{font-size:13px;color:var(--cy);margin-bottom:8px}
+.st h3{font-size:18px;margin-bottom:6px}.st p{margin:0;color:var(--mu);font-size:14px}
+.pbar{height:2px;background:var(--line);margin-bottom:18px;border-radius:2px}.pbar i{display:block;height:100%;background:var(--cy);width:20%;transition:width .4s}
+@media(max-width:900px){.pbar{display:none}}
+/* edu */
+.ed{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media(max-width:900px){.ed{grid-template-columns:1fr 1fr}}@media(max-width:560px){.ed{grid-template-columns:1fr}}
+.ed .glass{padding:20px}.ed b{font-size:26px;color:var(--cy);display:block}.ed h3{font-size:16px;margin:6px 0 4px}.ed span{color:var(--mu);font-size:14px}
+.bq{padding:20px;transition:.25s}.bq:hover{border-color:var(--cy)}.bq h3{font-size:16.5px;margin-bottom:4px}.bq p{margin:0;color:var(--mu);font-size:14px}
+/* contact */
+.ct{display:grid;grid-template-columns:1fr 1.1fr;gap:34px}
+@media(max-width:860px){.ct{grid-template-columns:1fr}}
+.ci{display:grid;gap:12px;margin:22px 0}
+.ci a,.ci div{display:block;padding:12px 16px;border:1px solid var(--line);border-radius:11px;background:#0b1424}
+.ci small{display:block;color:var(--mu);font-size:12px}
+.ci a:hover{border-color:var(--cy)}
+form{padding:26px;display:grid;gap:14px}
+label{font-size:13.5px;color:var(--mu);display:grid;gap:6px}
+input,textarea{background:#0a1120;border:1px solid var(--line);border-radius:10px;padding:12px 14px;color:var(--tx);font:inherit}
+input:focus,textarea:focus{outline:0;border-color:var(--cy);box-shadow:0 0 0 3px #22d3ee22}
+#fs{color:var(--ok);font-size:14px;min-height:20px}
+footer{border-top:1px solid var(--line);padding:44px 0 30px;color:var(--mu);font-size:14px}
+.ft{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px}
+footer b{color:var(--tx);font-size:17px}
+footer .l{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:6px}footer a:hover{color:var(--cy)}
+.cp{margin-top:28px;padding-top:18px;border-top:1px solid #16213a;font-size:13px}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.bars div{transform:none}.prog i{width:var(--w)}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav aria-label="Primary"><div class="w">
+<a href="#home" class="logo">subham<b>.</b>anand</a>
+<button id="mb" aria-expanded="false" aria-controls="lk">Menu</button>
+<div class="links" id="lk"><a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div>
+</div></nav>
+
+<main>
+<section id="home"><div class="w hero">
+<div>
+<div class="lab mono">TDL DEVELOPER · ERP CUSTOMIZATION</div>
+<h1>Turning Business Challenges Into <span>Smart Tally Solutions.</span></h1>
+<p>I’m a TDL Developer with 3+ years of experience building customized TallyPrime and Tally ERP 9 solutions. From inventory controls and automated workflows to analytical reports and data integrations, I build solutions that make business operations simpler and more efficient.</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn p" href="#projects">Explore My Work</a><a class="btn" href="#contact">Let’s Connect</a></div>
+<div class="exp"><b>3+</b><span>Years of Development Experience</span></div>
+<div class="badges"><span class="chip">TDL</span><span class="chip">TallyPrime</span><span class="chip">Tally ERP 9</span><span class="chip">XML</span><span class="chip">Excel</span><span class="chip">Inventory Management</span><span class="chip">Automation</span></div>
+</div>
+<div class="term">
+<span class="fl mono" style="top:-18px;left:12%">TDL</span><span class="fl mono" style="top:30px;right:-14px;animation-delay:-1s">TallyPrime</span><span class="fl mono" style="bottom:90px;left:-22px;animation-delay:-2s">Tally ERP 9</span><span class="fl mono" style="bottom:40px;right:-10px;animation-delay:-3s">XML</span><span class="fl mono" style="top:140px;right:-26px;animation-delay:-4s">Excel</span><span class="fl mono" style="bottom:-20px;left:16%;animation-delay:-5s">Automation</span><span class="fl mono" style="top:-16px;right:20%;animation-delay:-2.5s">Inventory Management</span>
+<div class="glass"><div class="bar mono"><i></i><i></i><i></i>&nbsp; custom_reports.tdl</div>
+<pre class="mono" id="code" aria-label="Sample TDL code" data-note="Illustrative snippet"></pre></div>
+</div>
+</div></section>
+
+<section id="about"><div class="w">
+<h2 class="rv">About Me</h2><p class="sub rv">Practical Tally engineering, shaped by real client workflows.</p>
+<div class="ab">
+<div class="glass card rv"><div class="av">SA</div><h3>Subham Anand</h3><div style="color:var(--mu);font-size:14px">TDL Developer · TallyPrime & Tally ERP 9</div>
+<dl><div><dt>Currently</dt><dd>Saraswati Accountants Software Pvt. Ltd.</dd></div><div><dt>Education</dt><dd>MCA, Amity University (2024)</dd></div></dl></div>
+<div class="rv"><p>I’m a TDL Developer specializing in TallyPrime and Tally ERP 9 customization, with over 3 years of hands-on experience developing solutions for accounting, inventory, and business operations.</p>
+<p>My work involves transforming client requirements into practical, production-ready solutions — from customized vouchers and invoice formats to inventory security controls, automated approval workflows, analytical reports, and data import utilities.</p>
+<p>I enjoy solving real business problems through technology, improving existing workflows, and developing solutions that help businesses operate with greater accuracy, control, and efficiency.</p></div>
+</div></div></section>
+
+<section id="skills"><div class="w">
+<h2 class="rv">Technical Skills</h2><p class="sub rv">Deep in Tally and TDL; honest about everything else.</p>
+<div class="grid g3" id="skg"></div>
+<p class="note">Dashed badges mark working or basic-level knowledge: API integration (working knowledge), SQL (basics), Python (basic).</p>
+</div></section>
+
+<section id="projects"><div class="w">
+<h2 class="rv">Featured Projects</h2><p class="sub rv">Real solution types I’ve built. Visuals are representative mockups with sample data, not client screenshots.</p>
+<div class="grid g2">
+
+<article class="glass pj rv"><div class="vis"><div class="t"><span>Stock by size · sample data</span><span class="mono">Garment Analytics</span></div>
+<div class="bars"><div style="height:35%"></div><div style="height:70%"></div><div style="height:100%"></div><div style="height:78%"></div><div style="height:45%"></div><div style="height:22%"></div></div>
+<div class="mono" style="display:flex;gap:10px;color:var(--mu);margin-top:6px"><span style="flex:1">XS</span><span style="flex:1">S</span><span style="flex:1">M</span><span style="flex:1">L</span><span style="flex:1">XL</span><span style="flex:1">XXL</span></div>
+<div class="sw">Colors <i style="background:#1e3a8a"></i><i style="background:#e5e7eb"></i><i style="background:#be123c"></i><i style="background:#166534"></i><span style="margin-left:auto"><span class="tag g">Fast-moving</span> <span class="tag y">Slow-moving</span></span></div></div>
+<div class="pb"><div class="cat mono">Inventory Management · Industry-Specific ERP</div><h3>Garment Industry Inventory & Sales Analytics Suite</h3>
+<p><b>Objective:</b> Give garment retail clients visibility into stock and sales performance broken down by size and color.</p>
+<button class="more" aria-expanded="false">Show details</button>
+<div class="det"><h4>What I built</h4><ul><li>Custom masters and vouchers capturing size- and color-level stock attributes.</li><li>Analytical reports on sales and inventory movement by size, color, and category.</li><li>Better merchandising and inventory decision-making.</li></ul></div>
+<div><span class="chip">TDL</span> <span class="chip">TallyPrime</span> <span class="chip">Tally ERP 9</span></div>
+<div class="imp"><b>Impact:</b> Helped management identify fast-moving and slow-moving stock variants for better restocking decisions.</div></div></article>
+
+<article class="glass pj rv"><div class="vis"><div class="t"><span>Godown access · sample data</span><span class="mono">Stock Control</span></div>
+<div class="row"><span>Main Godown</span><span><span class="tag g">Full access</span></span></div>
+<div class="row"><span>Warehouse B</span><span><span class="tag b">View only</span></span></div>
+<div class="row"><span>Retail Store</span><span><span class="tag r">Restricted</span></span></div>
+<div class="row" style="border-color:#f8717155"><span class="mono" style="color:var(--er)">Issue qty 12 · available 8</span><span class="tag r">Blocked: negative stock</span></div></div>
+<div class="pb"><div class="cat mono">Inventory Security · Business Control</div><h3>User-Wise Godown Security & Negative Stock Control</h3>
+<p><b>Objective:</b> Prevent unauthorized stock movement and eliminate negative stock errors across multiple godowns.</p>
+<button class="more" aria-expanded="false">Show details</button>
+<div class="det"><h4>What I built</h4><ul><li>User-wise access restrictions at godown level.</li><li>Negative stock validation rules within voucher entry.</li><li>Improved control over transactions across multiple locations.</li></ul></div>
+<div><span class="chip">TDL</span> <span class="chip">TallyPrime</span></div>
+<div class="imp"><b>Impact:</b> Reduced stock-entry errors and tightened control over multi-location inventory.</div></div></article>
+
+<article class="glass pj rv"><div class="vis"><div class="t"><span>Approval pipeline · sample data</span><span class="mono">Workflow</span></div>
+<div class="flow"><span class="d">Entry</span><span class="d">Submitted</span><span class="n">Approval</span><span>Posted</span></div>
+<div class="row"><span>Receipt voucher</span><span class="tag y">Pending</span></div>
+<div class="row"><span>Party outstanding mail</span><span class="tag g">Scheduled · sent</span></div>
+<div class="row"><span>Sales voucher</span><span class="tag g">Approved</span></div></div>
+<div class="pb"><div class="cat mono">Workflow Automation · Accounting Automation</div><h3>Automated Voucher Approval & Outstanding Report Mailer</h3>
+<p><b>Objective:</b> Remove manual steps from voucher approval and party outstanding follow-ups.</p>
+<button class="more" aria-expanded="false">Show details</button>
+<div class="det"><h4>What I built</h4><ul><li>Voucher approval workflow layer before posting.</li><li>Scheduled emailing of outstanding reports directly to parties.</li><li>Reduced manual follow-up workload for accounts teams.</li></ul></div>
+<div><span class="chip">TDL</span> <span class="chip">Tally Auto-Email</span> <span class="chip">Excel</span></div>
+<div class="imp"><b>Impact:</b> Improved workflow efficiency and sped up collection communication.</div></div></article>
+
+<article class="glass pj rv"><div class="vis"><div class="t"><span>Import run · sample data</span><span class="mono">Excel / XML → Tally</span></div>
+<div style="display:flex;gap:8px;align-items:center;margin-bottom:6px"><span class="tag g">Excel</span><span class="tag b">XML</span><span style="color:var(--mu)">→ validate →</span><span class="tag g">Tally</span></div>
+<div class="prog" style="--w:100%"><i style="--w:100%"></i></div>
+<div class="row"><span class="mono">Ledger master rows</span><span class="tag g">Imported</span></div>
+<div class="row"><span class="mono">Stock item rows</span><span class="tag g">Imported</span></div>
+<div class="row" style="border-color:#f8717155"><span class="mono" style="color:var(--er)">Row mismatch: unit missing</span><span class="tag r">Held for fix</span></div></div>
+<div class="pb"><div class="cat mono">Data Integration · Automation</div><h3>Excel & XML Data Import Utility</h3>
+<p><b>Objective:</b> Allow clients to migrate and refresh bulk accounting and inventory data into Tally without manual re-entry.</p>
+<button class="more" aria-expanded="false">Show details</button>
+<div class="det"><h4>What I built</h4><ul><li>Import routines supporting Excel and XML data formats.</li><li>Validation checks that catch data mismatches before posting into Tally.</li><li>Support for data migration and bulk master updates.</li></ul></div>
+<div><span class="chip">TDL</span> <span class="chip">XML</span> <span class="chip">MS Excel</span></div>
+<div class="imp"><b>Impact:</b> Reduced manual data entry and improved accuracy for bulk data migration and updates.</div></div></article>
+
+</div></div></section>
+
+<section id="services"><div class="w">
+<h2 class="rv">Services</h2><p class="sub rv">What I can build for your Tally setup.</p>
+<div class="grid g3" id="svg"></div>
+</div></section>
+
+<section id="process"><div class="w">
+<h2 class="rv">Development Process</h2><p class="sub rv">Select a step to see how each project moves forward.</p>
+<div class="pbar"><i id="pbi"></i></div>
+<div class="pr" id="prg"></div>
+</div></section>
+
+<section id="experience"><div class="w">
+<h2 class="rv">Experience</h2><p class="sub rv">Where I build and ship Tally solutions today.</p>
+<div class="tl rv"><div class="glass card"><h3>TDL Developer</h3><div class="m">Saraswati Accountants Software Pvt. Ltd. · December 2022 – Present</div>
+<ul class="res"><li>Developed, customized, and maintained Tally solutions using TDL for accounting and inventory workflows.</li><li>Implemented user-wise godown security and negative stock controls.</li><li>Customized vouchers, masters, and invoice printing formats.</li><li>Integrated barcode scanning into billing workflows.</li><li>Automated voucher approval workflows.</li><li>Automated emailing of vouchers and outstanding reports to parties.</li><li>Built Excel and XML data import utilities.</li><li>Developed garment industry solutions with size-, color-, and sales-based analytical reports.</li><li>Performed debugging, testing, bug fixing, and post-implementation support.</li><li>Scheduled automated backups and implemented data security practices.</li><li>Worked directly with clients to gather requirements and deliver tailored solutions.</li></ul></div></div>
+<h2 style="margin-top:70px" class="rv">Education</h2>
+<div class="ed rv"><div class="glass"><b>2024</b><h3>MCA</h3><span>Amity University</span></div><div class="glass"><b>2022</b><h3>BCA</h3><span>Guru Gobind Singh Indraprastha University</span></div><div class="glass"><b>2018</b><h3>Senior Secondary (12th)</h3><span>BBOSE</span></div><div class="glass"><b>2016</b><h3>Secondary (10th)</h3><span>CBSE</span></div></div>
+</div></section>
+
+<section id="beyond"><div class="w">
+<h2 class="rv">Beyond the Code</h2><p class="sub rv">How I work with teams and clients.</p>
+<div class="grid g3" id="bqg"></div>
+</div></section>
+
+<section id="contact"><div class="w">
+<div class="ct">
+<div class="rv"><h2>Have a Business Workflow That Needs a Smarter Solution?</h2>
+<p class="sub" style="margin-bottom:0">Whether you need Tally customization, automation, a specialized report, or an inventory solution, let’s discuss how technology can simplify your workflow.</p>
+<div class="ci"><a href="mailto:subhamanand44659@gmail.com"><small>Email</small>subhamanand44659@gmail.com</a><a href="tel:+917004406636"><small>Phone / WhatsApp</small>+91-7004406636</a><a href="https://linkedin.com/in/subham-anand-850a33202" target="_blank" rel="noopener"><small>LinkedIn</small>linkedin.com/in/subham-anand-850a33202</a></div>
+<div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn p" href="mailto:subhamanand44659@gmail.com">Email Me</a><a class="btn" href="https://linkedin.com/in/subham-anand-850a33202" target="_blank" rel="noopener">Connect on LinkedIn</a><a class="btn" href="https://wa.me/917004406636" target="_blank" rel="noopener">WhatsApp</a></div></div>
+<form class="glass rv" id="cf" novalidate>
+<label>Name<input name="n" required autocomplete="name"></label>
+<label>Email<input name="e" type="email" required autocomplete="email"></label>
+<label>Project / Requirement<input name="p" required placeholder="e.g. Custom invoice format, approval workflow"></label>
+<label>Message<textarea name="m" rows="5" required></textarea></label>
+<button class="btn p" type="submit">Send Message</button>
+<div id="fs" role="status" aria-live="polite"></div>
+</form></div></div></section>
+</main>
+
+<footer><div class="w"><div class="ft">
+<div><b>Subham Anand</b><div>TDL Developer | TallyPrime Customization Specialist</div></div>
+<div><div class="l"><a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div>
+<div class="l"><a href="https://linkedin.com/in/subham-anand-850a33202" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:subhamanand44659@gmail.com">Email</a><a href="https://wa.me/917004406636" target="_blank" rel="noopener">WhatsApp</a></div></div>
+</div><div class="cp">© 2026 Subham Anand. All rights reserved.</div></div></footer>
+
+<script>
+const $=s=>document.querySelector(s);
+const SK=[["TDL & Tally",["TDL (Tally Definition Language)","TallyPrime Customization","Tally ERP 9","Collection & Object Framework"]],
+["Customization & Reporting",["Voucher Customization","Invoice Customization","Payroll Customization","MIS & Analytical Reports","Report Development"]],
+["Integration & Data",["Excel Import/Export","XML Integration","API Integration (Working Knowledge)~","Barcode Integration","Data Migration"]],
+["Business Domain",["Inventory Management","GST Compliance","Accounting Solutions","Godown & Stock Security Controls"]],
+["Programming & Tools",["SQL (Basics)~","Python (Basic)~","MS Excel","Debugging & Troubleshooting"]],
+["Professional Skills",["Client Requirement Analysis","Tally Automation","Problem Solving","Communication","Time Management","Team Collaboration"]]];
+$('#skg').innerHTML=SK.map(([t,a])=>`<div class="glass sk rv"><h3>${t}</h3>${a.map(x=>x.endsWith('~')?`<span class="chip lt">${x.slice(0,-1)}</span>`:`<span class="chip">${x}</span>`).join('')}</div>`).join('');
+const SV=[["TP","TallyPrime Customization","Tailor TallyPrime functionality around specific business processes."],["TDL","TDL Development","Develop custom modules, reports, forms, validations, and workflows."],["Vch","Voucher & Invoice Customization","Customize voucher entry, invoice layouts, printing, and business-specific fields."],["Inv","Inventory Management Solutions","Stock controls, godown security, negative stock validations, and inventory reports."],["MIS","MIS & Analytical Reporting","Business insights through custom reports and analytical dashboards."],["Auto","Accounting Automation","Automate repetitive accounting tasks, approvals, and report distribution."],["X/E","Excel & XML Integration","Bulk data import/export, migration utilities, and data synchronization."],["Bar","Barcode Integration","Improve billing and stock operations with barcode-based workflows."],["Pay","Payroll Customization","Develop payroll workflows and custom payroll requirements."],["Fix","Bug Fixing & Support","Troubleshooting, testing, maintenance, and post-deployment support."]];
+$('#svg').innerHTML=SV.map(([i,t,d])=>`<div class="glass sv rv"><div class="ic mono">${i}</div><h3>${t}</h3><p>${d}</p></div>`).join('');
+const BQ=[["Strong work ethic","Consistent, dependable delivery."],["Target-oriented mindset","Focused on outcomes that matter to the client."],["Time management","Punctual and organized."],["Handling multiple tasks","Comfortable juggling parallel workloads."],["Team and individual contribution","Effective alone or in a team."],["Clear communication","Plain, direct updates."],["Client requirement understanding","Turning business needs into specifications."],["Practical problem-solving","Reliable fixes over clever ones."]];
+$('#bqg').innerHTML=BQ.map(([t,d])=>`<div class="glass bq rv"><h3>${t}</h3><p>${d}</p></div>`).join('');
+const PR=[["Discover","Understand client requirements, workflows, and business challenges."],["Analyze","Evaluate existing Tally setup and identify the best technical approach."],["Develop","Build customized TDL solutions and automation workflows."],["Test","Validate functionality, data accuracy, security, and reliability."],["Deploy & Support","Implement the solution and provide ongoing support when needed."]];
+$('#prg').innerHTML=PR.map(([t,d],i)=>`<button class="glass st rv${i?'':' on'}" data-i="${i}" aria-pressed="${!i}"><div class="n mono">Step 0${i+1}</div><h3>${t}</h3><p>${d}</p></button>`).join('');
+document.querySelectorAll('.st').forEach(b=>b.onclick=()=>{document.querySelectorAll('.st').forEach(x=>{x.classList.remove('on');x.setAttribute('aria-pressed','false')});b.classList.add('on');b.setAttribute('aria-pressed','true');$('#pbi').style.width=(+b.dataset.i+1)*20+'%'});
+// nav
+$('#mb').onclick=()=>{const o=$('#lk').classList.toggle('open');$('#mb').setAttribute('aria-expanded',o)};
+document.querySelectorAll('.links a').forEach(a=>a.onclick=()=>$('#lk').classList.remove('open'));
+const secs=['home','about','skills','projects','experience','contact'];
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)document.querySelectorAll('.links a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-45% 0px -50% 0px'});
+secs.forEach(s=>so.observe($('#'+s)));
+// reveal
+const ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(e=>ro.observe(e));
+document.querySelectorAll('.pj .more').forEach(b=>b.onclick=()=>{const p=b.closest('.pj'),o=p.classList.toggle('open');b.textContent=o?'Hide details':'Show details';b.setAttribute('aria-expanded',o)});
+// terminal
+const CODE=`<span class="c">; Illustrative TDL snippet</span>
+[<span class="k">#Menu</span>: <span class="f">Gateway of Tally</span>]
+    <span class="k">Add</span> : <span class="k">Item</span> : <span class="s">Custom Reports</span> : <span class="k">Display</span> : <span class="s">My Reports</span>
+
+[<span class="k">Report</span>: <span class="f">My Reports</span>]
+    <span class="k">Use</span>   : <span class="f">Dsp Template</span>
+    <span class="k">Form</span>  : <span class="f">My Reports</span>
+
+[<span class="k">System</span>: <span class="f">Formula</span>]
+    <span class="f">NegStockChk</span> : <span class="s">$$IsNegativeStock</span>`;
+const tok=CODE.match(/<[^>]+>|[^<]/g),pre=$('#code');
+if(matchMedia('(prefers-reduced-motion:reduce)').matches){pre.innerHTML=CODE}else{let i=0,out='';(function t(){const n=tok[i++];out+=n;pre.innerHTML=out+'<span class="cur"></span>';if(i<tok.length)setTimeout(t,n[0]==='<'?0:22);else pre.innerHTML=CODE+'<span class="cur"></span>'})()}
+// form
+$('#cf').onsubmit=e=>{e.preventDefault();const f=e.target,v=n=>f.elements[n].value.trim();
+if(!v('n')||!/^\S+@\S+\.\S+$/.test(v('e'))||!v('p')||!v('m')){$('#fs').style.color='var(--er)';$('#fs').textContent='Please fill in every field with a valid email address.';return}
+const b=encodeURIComponent(`Name: ${v('n')}\nEmail: ${v('e')}\n\n${v('m')}`);
+location.href=`mailto:subhamanand44659@gmail.com?subject=${encodeURIComponent('Requirement: '+v('p'))}&body=${b}`;
+$('#fs').style.color='var(--ok)';$('#fs').textContent='Opening your email app with the message ready to send.'};
+</script>
+</body>
+</html>
